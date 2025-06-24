@@ -7,7 +7,7 @@
 <body>
 <script>
   async function run() {
-    await liff.init({ liffId: "YOUR_LIFF_ID" }); // 👈 กรอก LIFF ID
+    await liff.init({ liffId: "2007634013-k2ZQv38e" }); // 👈 กรอก LIFF ID
 
     if (!liff.isLoggedIn()) {
       liff.login();
@@ -21,7 +21,7 @@
     const mode = urlParams.get("mode") || "chat";
 
     // เปลี่ยน URL ตาม server webhook ที่คุณใช้
-    const targetUrl = `https://yourdomain.com/Wheeli_AI?mode=${mode}&userId=${userId}`;
+    const targetUrl = `https://primary-production-2a6d.up.railway.app/webhook/Wheelie_AI?mode=${mode}&userId=${userId}`;
 
     window.location.href = targetUrl;
   }
